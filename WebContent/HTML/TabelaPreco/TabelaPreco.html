@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tabela de Preços</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script type="text/javascript" src="../common.js"></script>
+ <meta charset="UTF-8"> 
+</head>
+<body id= "bContent">
+	<div id="dWait">
+		<h1>CARREGANDO A PAGINA</h1>
+		<h2>AGUARDE....</h2>
+	</div>
+	<header id="hContent"  class="hidden"></header>
+	<div class="content hidden" id="dContent">
+		<div class="BodyTitle"><h2>Manutenção da tabela de preços</h2></div>
+		<form id="mainForm">
+			<div class="nes-field">
+				<label for="CD_TABELA_TIPO">Código da tabela</label> 
+				<p id="CD_TABELA_TIPO">-</p>
+			</div>
+			<div class="nes-field">
+				<label for="DS_TIPO_VEICULO">Tipo de Veiculo</label> 
+				<input type="text" name="DS_TIPO_VEICULO" disabled="disabled" id="DS_TIPO_VEICULO" class="nes-input">
+			</div>
+			<div class="nes-field">
+				<label for="PR_P15">Valor Primeiros 15min</label> 
+				<input type="text" name="PR_P15" disabled="disabled" id="PR_P15" class="nes-input">
+			</div>
+			<div class="nes-field">
+				<label for="PR_P30">Valor Primeiros 30min</label> 
+				<input type="text" name="PR_P30" disabled="disabled" id="PR_P30" class="nes-input">
+			</div>
+			<div class="nes-field">
+				<label for="PR_P60">Valor Primeiros 60min</label> 
+				<input type="text" name="PR_P60" disabled="disabled" id="PR_P60" class="nes-input">
+			</div>
+			<div class="nes-field">
+				<label for="PR_D15">Valor Demais 15min</label> 
+				<input type="text" name="PR_D15" disabled="disabled" id="PR_D15" class="nes-input">
+			</div>
+			<div class="nes-field">
+				<label for="PR_PDIA">Valor da Diaria</label> 
+				<input type="text" name="PR_PDIA" disabled="disabled" id="PR_PDIA" class="nes-input">
+			</div>
+			<div class="nes-field">
+				<label for="PR_PMES">Valor do Mensal</label> 
+				<input type="text" name="PR_PMES" disabled="disabled" id="PR_PMES" class="nes-input">
+			</div>
+			<div class="formBtn">
+				<button id="btnClear" type="button" class="nes-btn is-disabled">Limpar</button>
+				<button id="btnCancel" type="button" class="nes-btn is-disabled">Cancelar</button>
+				<button id="btnSave" type="button" class="nes-btn is-disabled">Salvar</button>
+			</div>
+		</form>
+		<div>
+			<button id="btnReload" class="nes-btn is-success">Atualizar Tabela</button>
+			<div id="divTable"></div>
+			<div class="divBtn">
+				<button id="btnEditar" class="nes-btn is-disabled">Editar</button>
+				<button id="btnExcluir" class="nes-btn is-disabled">Excluir</button>
+				<button id="btnNovo" class="nes-btn is-success">Novo</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

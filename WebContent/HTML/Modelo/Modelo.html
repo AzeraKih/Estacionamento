@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Modelos</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script type="text/javascript" src="../common.js"></script>
+ <meta charset="UTF-8"> 
+</head>
+<body id= "bContent">
+	<div id="dWait">
+		<h1>CARREGANDO A PAGINA</h1>
+		<h2>AGUARDE....</h2>
+	</div>
+	<header id="hContent"  class="hidden"></header>
+	<div class="content hidden" id="dContent">
+		<div class="BodyTitle"><h2>Cadastro de Modelos</h2></div>
+		<form id="mainForm">
+			<div class="nes-field">
+				<label for="CD_MODELO">Código do Modelo</label> 
+				<p id="CD_MODELO">-</p>
+			</div>
+			<div class="nes-field">
+				<label for="DS_MODELO">Nome do Modelo</label> 
+				<input type="text" name="DS_MODELO" disabled="disabled" id="DS_MODELO" class="nes-input">
+			</div>
+			<div class="nes-field">
+				<label for="DT_ANO">Ano do Modelo</label> 
+				<input type="number" name="DT_ANO" disabled="disabled" id="DT_ANO" class="nes-input">
+			</div>
+			<div>
+				<label for="default_select">Marca</label>
+				<div class="nes-select">
+				  <select required id="CD_MARCA" disabled="disabled">
+				    <option value="" disabled selected hidden="hidden">Selecione</option>
+				  </select>
+				</div>
+			</div>
+			<div>
+				<label for="default_select">Tipo</label>
+				<div class="nes-select">
+				  <select required id="CD_TABELA_TIPO" disabled="disabled">
+				    <option value="" disabled selected hidden="hidden">Selecione</option>
+				  </select>
+				</div>
+			</div>			
+			
+			<div class="formBtn">
+				<button id="btnClear" type="button" class="nes-btn is-disabled">Limpar</button>
+				<button id="btnCancel" type="button" class="nes-btn is-disabled">Cancelar</button>
+				<button id="btnSave" type="button" class="nes-btn is-disabled">Salvar</button>
+			</div>
+		</form>
+		<div>
+			<button id="btnReload" class="nes-btn is-success">Atualizar Tabela</button>
+			<div id="divTable"></div>
+			<div class="divBtn">
+				<button id="btnEditar" class="nes-btn is-disabled">Editar</button>
+				<button id="btnExcluir" class="nes-btn is-disabled">Excluir</button>
+				<button id="btnNovo" class="nes-btn is-success">Novo</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

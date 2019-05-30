@@ -1,0 +1,22 @@
+@charset "ISO-8859-1";
+
+
+
+@media (max-width: 1075px){
+	.tableHeader{
+		font-size: .7em;
+	}
+}
+@media (max-width: 895px){
+	.tableBody>div>div>p{
+		font-size: .7em;
+	}
+}
+@media (max-width: 754px){
+	
+	.tableHeader>div>p, .tableBody>div>div>p{
+		font-size: .5em;
+		word-wrap:break-word;
+	}
+	
+}

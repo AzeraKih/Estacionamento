@@ -1,0 +1,139 @@
+@charset "ISO-8859-1";
+body, header{
+	min-width: 459px;
+}
+.content{
+	margin:10px auto;
+	width: 90%;
+}
+.logo>img{
+	width: 100px;
+	margin: 10px 30px;
+}
+.navdropdown{
+	display: inline-block;
+}
+.nes-text.is-primary.navlink, .nes-text.is-primary.navspan{
+	font-size: .85em;
+	display: inline-block;
+	padding: 4px;
+}
+.nes-text.is-primary.navlink:hover, .nes-text.is-primary.navspan:hover{
+	color: #0000ff;
+	text-decoration: none;
+}
+.hidden{
+	display:none;
+}
+.navdropdown>div{
+	position: fixed;
+	z-index: 90;
+	box-shadow: 0px 5px 5px #000;
+}
+.navdropdown>div>a.nes-text.is-primary.navlink{
+	display: block;
+}
+.logo>h3{
+	display: inline-block;
+	margin: 0;
+}
+.navdropdown>div{
+	background-color: #ddf;
+	border: 1px #209cee solid;
+	border-top:none;
+}
+
+header{
+	background-color: #ddf;
+	z-index: 99;
+	width: 100%;
+}
+header>nav{
+	text-align: right;
+	margin-right: 50px;
+}
+
+.formBtn, .divBtn{
+	margin: 10px 0;
+}
+#btnReload{
+	font-size: .6em;
+}
+#btnSave, #btnNovo{
+	float: right;
+}
+#divTable{
+	margin-top: 20px;
+	width: 100%;
+}
+.row, .tableHeader, .tableBody{
+	display: block;
+	width: 100%;
+}
+.tableHeader{
+	background-color: #ddf;	
+}
+.tableHeader>div{
+	height: 100%;
+}
+.column{
+	display: inline-block;
+	outline: 1px black solid;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+.column>p{
+	margin-top: 1rem;
+	margin-bottom: 0px;
+}
+.column.c10{
+	width: 10%;
+}
+.column.c15{
+	width: 15%;
+}
+.column.c20{
+	width: 20%;
+}
+.column.c25{
+	width:  25%;
+}
+.column.c50{
+	width: 50%;
+}
+.column.c75{
+	width: 75%;
+}
+.column.c100{
+	width: 100%;
+}
+.column.c6{
+	width: 16%;
+}
+.column.c7{
+	width: 14%;
+}
+.row.selected{
+	background-color: #ddd;
+}
+#divTable>div{
+	outline: 1px black solid;
+	display: inline-block;
+}
+
+@media (max-width: 655px){
+	.nes-btn{
+		font-size: .7em;
+	}
+	.logo>h3{
+		font-size: 11px;
+	}
+	.logo>img{
+		margin: 10px 15px;
+	}
+	header>nav{
+		text-align: left;
+		font-size: .8em;
+	}
+}
