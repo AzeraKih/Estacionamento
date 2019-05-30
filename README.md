@@ -1,13 +1,15 @@
 # Estacionamento
 
+<p>the project uses the NES.css: https://nostalgic-css.github.io/NES.css/</>
+
 <p>You need to configure Build path whit: </p>
 <p>JSON JAVA - https://github.com/stleary/JSON-java</p>
 <p>ORACLE OJDC8 - https://www.oracle.com/technetwork/database/application-development/jdbc/downloads/jdbc-ucp-183-5013470.html</p>
 <p>Eclipse link 2.5.0</p>
-
 <p>Server: Tomcat 7.0</p>
 
 <p>After clone the project you need to configure your persistence.xml in folder <i>src/META-INF/persistence.xml</i>, with te following content:</p>
+
 
 ```xml
   <?xml version="1.0" encoding="UTF-8"?>

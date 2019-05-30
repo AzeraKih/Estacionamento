@@ -19,19 +19,20 @@ $("#btnSave").on("click", function(){
 	function validaCampos(){
 		if(DS_MODELO == ""){
 			$("#DS_TIPO_VEICULO").addClass("is-error");
-			StrErro = "\nNome do tipo não pode ser vazio!";
+			StrErro += "\nNome do modelo não pode ser vazio!";
 		}
-		if(CD_MARCA == ""){
+		if(CD_MARCA == null){
 			$("CD_MARCA").addClass("is-error");
-			StrErro = "\nMarca nao pode ser vazio";
+			StrErro += "\nMarca nao pode ser vazio";
 		}
-		if(CD_TABELA_TIPO == ""){
+				
+		if(CD_TABELA_TIPO == null){
 			$("CD_TABELA_TIPO").addClass("is-error");
-			StrErro = "\nTipo não pode ser vazio";
+			StrErro += "\nTipo não pode ser vazio";
 		}
 		if(DT_ANO == ""){
 			$("DT_ANO").addClass("is-error");
-			StrErro = "\nAno não pode ser vazio";
+			StrErro += "\nAno não pode ser vazio";
 		}
 	}
 	
@@ -298,8 +299,8 @@ $("#btnEditar").on("click", function(){
 	let CD_MODELO = $($($(".row.rbody." + selected).find(".CD_MODELO").html())[0]).html();
 	let DS_TIPO_VEICULO = $($($(".row.rbody." + selected).find(".DS_TIPO_VEICULO").html())[0]).html();
 	let DT_ANO = $($($(".row.rbody." + selected).find(".DT_ANO").html())[0]).html();
-	let CD_MARCA = $($($(".row.rbody." + selected).find(".CD_MARCA").html())[0]).attr("value");  
-	let CD_TABELA_TIPO = $($($(".row.rbody." + selected).find(".CD_TABELA_TIPO").html())[0]).attr("value"); 
+	let CD_MARCA = $($(".row.rbody." + selected).find(".CD_MARCA")).attr("value");  
+	let CD_TABELA_TIPO = $($(".row.rbody." + selected).find(".CD_TABELA_TIPO")).attr("value");  
 	console.log(CD_MARCA);
 	//Valida o Codigo
 	if (CD_MODELO == ""){
