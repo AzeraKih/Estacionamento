@@ -3,7 +3,7 @@
 <p>You need to configure Build path whit: </p>
 <p>JSON JAVA - https://github.com/stleary/JSON-java</p>
 <p>ORACLE OJDC8 - https://www.oracle.com/technetwork/database/application-development/jdbc/downloads/jdbc-ucp-183-5013470.html</p>
-<p>and Eclipse link 2.5.0</p>
+<p>Eclipse link 2.5.0</p>
 
 <p>Server: Tomcat 7.0</p>
 
